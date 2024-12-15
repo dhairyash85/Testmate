@@ -5,7 +5,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 import { FiClipboard, FiUsers, FiFileText, FiBarChart2, FiSettings, FiLogOut } from 'react-icons/fi';
 
-import jwtDecode from 'jwt-decode';
+// import jwtDecode from 'jwt-decode';
 
 function StudentDashboard() {
   const navigate = useNavigate();

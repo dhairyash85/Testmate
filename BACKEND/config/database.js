@@ -21,7 +21,7 @@ sequelize
   const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Chunnilal@5', // Replace with your actual password
+    password: 'dheerizz', // Replace with your actual password
     database: 'gatewebsite'
   });
   

@@ -18,6 +18,7 @@ import Layout from './components/Layout';
 import AdminDashboard from './pages/AdminDashboard'; // Import your AdminP
 import PrivateRoute from './components/PrivateRoute';
 import PaymentInfo from './pages/PaymentInfo';
+import VideoFaceDetector from './pages/Detection';
 
 function App() {
   // Function to check if the user is logged in
@@ -51,7 +52,7 @@ function App() {
           <Route path="/create-test" element={<CreateTest />} />
           <Route path="/test-questionCreation/:test_id" element={<AddQuestion />} />
           <Route path="/payment-info/:testId" element={<PaymentInfo />} />
-          
+          <Route path="/face-detection" element={<VideoFaceDetector />} />
         </Routes>
       </Layout>
     </Router>

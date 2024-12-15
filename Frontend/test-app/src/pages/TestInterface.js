@@ -31,8 +31,9 @@ const TestInterface = () => {
         setAttemptId(data.testAttempt.id); // Store attempt ID from response
         setTestName(data.testName); // Store test name
         setTimer(data.testDuration * 60); // Set timer in seconds (duration in minutes * 60)
-
+      }
   
+    }
     const checkPaymentStatusAndFetchTestData = async () => {
       try {
         const response = await fetch('http://localhost:8000/api/start-test', {
@@ -59,8 +60,7 @@ const TestInterface = () => {
 
       }
     };
-
-    checkPaymentStatusAndFetchTestData();
+  checkPaymentStatusAndFetchTestData();
   }, [testId, navigate]);
 
   const initiateRazorpayPayment = (orderId, amount, currency, userId) => {
